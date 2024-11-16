@@ -1,0 +1,79 @@
+# General OS and IDE files
+.DS_Store
+Thumbs.db
+*.log
+*.env
+*.env.*
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+
+# React-specific
+# Production build files
+*.cache/
+*.next/
+.next/
+.vite/
+.vite_cache/
+out/
+coverage/
+public/static/
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase files
+firebase-debug.log
+.firebaserc
+firebase.json
+database.rules.json
+storage.rules
+firebase-hosting-cache/
+*.key
+*.crt
+
+# Laravel-specific
+/vendor/
+.env
+.env.*
+storage/*.key
+storage/*.crt
+storage/*.log
+/storage/logs/
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+public/storage
+public/hot
+/.vscode/
+.npm/
+composer.lock
+
+# Caches and compiled files
+/.phpunit.result.cache
+.phpunit.result.cache
+.phpunit-watcher.lock
+.phpunit-watcher.result.cache
+
+# Temporary files
+*.phpunit.cache
+phpunit.*
+# Debug logs
+*.sql*
+*.seed
+*.bak
+*.tmp
+*.cache
