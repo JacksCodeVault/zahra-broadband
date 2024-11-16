@@ -6,6 +6,8 @@
   import About from '@/pages/About'
   import Contact from '@/pages/Contact'
   import NotFound from '@/pages/NotFound'
+  import GetStarted from '@/pages/GetStarted'
+  import ApplicationForm from '@/components/ApplicationForm'
 
   export default function AppRoutes() {
     return (
@@ -16,6 +18,8 @@
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/get-started" element={<GetStarted />} />
+        <Route path="/application" element={<ApplicationForm />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     )

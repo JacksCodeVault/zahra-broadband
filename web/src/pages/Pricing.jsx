@@ -1,10 +1,12 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { Navbar } from "@/components/Navbar"
 import { Footer } from "@/components/Footer"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
 
 export default function Pricing() {
+    const navigate = useNavigate()
   const [selectedPlan, setSelectedPlan] = useState('home')
 
   const plans = {
@@ -146,9 +148,13 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <Button className="mt-8 w-full" variant={plan.popular ? 'default' : 'outline'}>
-                Get Started
-              </Button>
+              <Button 
+    className="mt-8 w-full" 
+    variant={plan.popular ? 'default' : 'outline'}
+    onClick={() => navigate('/get-started')}
+  >
+    Get Started
+  </Button>
             </div>
           ))}
         </div>
