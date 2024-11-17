@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 admin-sdk.json
 /config/firebase-config.js
+*.zip
